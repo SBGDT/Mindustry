@@ -4313,6 +4313,39 @@ public class Blocks{
             consumePower(10f);
         }};
 
+        spark = new ItemTurret("spark"){{
+            requirements(Category.turret, with(items.copper, 40, items.lead, 20));
+            size = 1;
+            health = 340;
+            range = 110f;
+            reload = 25f;
+            ammoPerShot = 1;
+            maxAmmo = 20;
+            shootSound = Sounds.spark;
+            shootEffect = Fx.sparkShoot;
+            smokeEffect = Fx.none;
+
+            ammo(
+                items.copper new LightningBulletType(){{
+                    damage = 11f;
+                    lightningLength = 4;
+                    lightningColor = Pal.lancerLaser;
+                    collidesAir = true;
+                    collidesGround = true;
+                }},
+                Items.silicon, new LightningBulletType(){{
+                    damage = 22f;
+                    lightningLength = 6;
+                    lightningColor = Pal.shootRipple;
+                    collidesAir = true;
+                    collidesGround = true;
+                    ammoMultiplier = 3;
+                }}
+            );
+        }};
+
+
+
         spectre = new ItemTurret("spectre"){{
             requirements(Category.turret, with(Items.copper, 900, Items.graphite, 300, Items.surgeAlloy, 250, Items.plastanium, 175, Items.thorium, 250));
             ammo(
