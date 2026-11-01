@@ -4274,15 +4274,15 @@ public class Blocks{
                     frontColor = Pal.thoriumAmmoFront;
                 }},
                 Items.copper, new RailBulletType(){{
-                    shootEffect = Fx.instShoot;
-                    hitEffect = Fx.instHit;
-                    pierceEffect = Fx.railHit;
+                    shootEffect = Fx.unitAssemble;
+                    hitEffect = Fx.spawnShockwave;
+                    pierceEffect = Fx.sparkExplosion;
                     smokeEffect = Fx.smokeCloud;
                     pointEffect = Fx.instTrail;
                     despawnEffect = Fx.instBomb;
                     pointEffectSpace = 20f;
-                    damage = 1000;
-                    buildingDamageMultiplier = 0.2f;
+                    damage = 300;
+                    buildingDamageMultiplier = 2f;
                     pierceDamageFactor = 1f;
                     length = brange;
                     hitShake = 6f;
