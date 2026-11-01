@@ -3312,6 +3312,22 @@ public class Blocks{
                     hitEffect = despawnEffect = Fx.hitBulletColor;
                     hitColor = backColor = trailColor = Pal.siliconAmmoBack;
                     frontColor = Pal.siliconAmmoFront;
+                }},
+                Items.plastanium, new BasicBulletType(3.5f, 18){{
+                    width = 9f;
+                    height = 12f;
+                    homingPower = 5f;
+                    ammoMultiplier = 12;
+                    lifetime = 120f;
+                    reloadMultiplier = 1f;
+                    rangeChange = 5f;
+
+                    trailLength = 15;
+                    trailWidth = 2f;
+
+                    hitEffect = despawnEffect = Fx.hitBulletColor;
+                    hitColor = backColor = trailColor = Pal.plastaniumBack;
+                    frontColor = Pal.plastaniumFront;
                 }}
             );
 
@@ -3345,7 +3361,7 @@ public class Blocks{
             researchCostMultiplier = 0.05f;
             depositCooldown = 2.0f;
 
-            limitRange(5f);
+            limitRange(10f);
         }};
 
         scatter = new ItemTurret("scatter"){{
@@ -4244,11 +4260,23 @@ public class Blocks{
                     length = brange;
                     hitShake = 6f;
                     ammoMultiplier = 1f;
+                }},
+                Items.thorium, new BasicBulletType(8f, 80){{
+                    hitSize = 5;
+                    width = 16f;
+                    height = 23f;
+                    shootEffect = Fx.shootBig;
+                    pierceCap = 2;
+                    pierceBuilding = true;
+                    knockback = 0.7f;
+
+                    backColor = hitColor = trailColor = Pal.thoriumAmmoBack;
+                    frontColor = Pal.thoriumAmmoFront;
                 }}
             );
 
             maxAmmo = 40;
-            ammoPerShot = 5;
+            ammoPerShot = 2;
             rotateSpeed = 1.5f;
             reload = 200f;
             ammoUseEffect = Fx.casing3Double;
