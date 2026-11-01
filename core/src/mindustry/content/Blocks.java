@@ -4261,17 +4261,32 @@ public class Blocks{
                     hitShake = 6f;
                     ammoMultiplier = 1f;
                 }},
-                Items.thorium, new BasicBulletType(8f, 80){{
+                Items.thorium, new BasicBulletType(19f, 120){{
                     hitSize = 5;
-                    width = 16f;
+                    width = 18f;
                     height = 23f;
                     shootEffect = Fx.shootBig;
-                    pierceCap = 2;
+                    pierceCap = 5;
                     pierceBuilding = true;
-                    knockback = 0.7f;
+                    knockback = 5f;
 
                     backColor = hitColor = trailColor = Pal.thoriumAmmoBack;
                     frontColor = Pal.thoriumAmmoFront;
+                }},
+                Items.copper, new RailBulletType(){{
+                    shootEffect = Fx.instShoot;
+                    hitEffect = Fx.instHit;
+                    pierceEffect = Fx.railHit;
+                    smokeEffect = Fx.smokeCloud;
+                    pointEffect = Fx.instTrail;
+                    despawnEffect = Fx.instBomb;
+                    pointEffectSpace = 20f;
+                    damage = 1000;
+                    buildingDamageMultiplier = 0.2f;
+                    pierceDamageFactor = 1f;
+                    length = brange;
+                    hitShake = 6f;
+                    ammoMultiplier = 1f;
                 }}
             );
 
