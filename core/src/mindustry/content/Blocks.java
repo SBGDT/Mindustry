@@ -4341,7 +4341,7 @@ public class Blocks{
             smokeEffect = Fx.none;
 
             ammo(
-                Items.copper new LightningBulletType(){{
+                Items.copper, new LightningBulletType(){{
                     damage = 11f;
                     lightningLength = 4;
                     lightningColor = Pal.lancerLaser;
