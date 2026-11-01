@@ -4287,6 +4287,21 @@ public class Blocks{
                     length = brange;
                     hitShake = 6f;
                     ammoMultiplier = 1f;
+                }},
+                Items.blastCompound, new ContinuousLaserBulletType(38f){{
+                    length = 190f;
+                    width = 9f;
+                    lifetime = 60f * 10f;
+                    pierceCap = 3;
+                    incendChance = 0.6f;
+                    incendSpread = 6f;
+
+                    hitEffect = Fx.hitFlameSmall;
+                    despawnEffect = Fx.spawnShockwave;
+                    shootEffect = Fx.shootPyraFlame;
+                    smokeEffect = Fx.artilleryTrailSmoke;
+                    shootEffect = Fx.lightningShoot;
+
                 }}
             );
 
@@ -4343,6 +4358,7 @@ public class Blocks{
                 }}
             );
         }};
+
 
 
 
