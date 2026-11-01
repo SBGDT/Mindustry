@@ -4329,14 +4329,13 @@ public class Blocks{
         }};
 
         sparkShot = new ItemTurret("sparkShot"){{
-            requirements(Category.turret, with(items.copper, 40, items.lead, 20));
+            requirements(Category.turret, with(Items.copper, 40, Items.lead, 20));
             size = 1;
             health = 340;
             range = 110f;
             reload = 25f;
             ammoPerShot = 1;
             maxAmmo = 20;
-            shootSound = Sounds.spark;
             shootEffect = Fx.sparkShoot;
             smokeEffect = Fx.none;
 
@@ -4351,7 +4350,6 @@ public class Blocks{
                 Items.silicon, new LightningBulletType(){{
                     damage = 22f;
                     lightningLength = 6;
-                    lightningColor = Pal.shootArc;
                     collidesAir = true;
                     collidesGround = true;
                     ammoMultiplier = 3;
