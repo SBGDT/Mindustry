@@ -150,7 +150,7 @@ public class Blocks{
     coreBastion, coreCitadel, coreAcropolis, reinforcedContainer, reinforcedVault,
 
     //turrets
-    duo, scatter, scorch, hail, arc, wave, lancer, swarmer, salvo, fuse, ripple, cyclone, foreshadow, spectre, meltdown, segment, parallax, tsunami,
+    duo, scatter, sparkShot, scorch, hail, arc, wave, lancer, swarmer, salvo, fuse, ripple, cyclone, foreshadow, spectre, meltdown, segment, parallax, tsunami,
 
     //turrets - erekir
     breach, diffuse, sublimate, titan, disperse, afflict, lustre, scathe, smite, malign,
@@ -4351,7 +4351,7 @@ public class Blocks{
                 Items.silicon, new LightningBulletType(){{
                     damage = 22f;
                     lightningLength = 6;
-                    lightningColor = Pal.shootRipple;
+                    lightningColor = Pal.shootArc;
                     collidesAir = true;
                     collidesGround = true;
                     ammoMultiplier = 3;
