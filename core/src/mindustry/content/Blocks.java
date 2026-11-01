@@ -4328,7 +4328,7 @@ public class Blocks{
             consumePower(10f);
         }};
 
-        spark = new ItemTurret("spark"){{
+        sparkShot = new ItemTurret("sparkShot"){{
             requirements(Category.turret, with(items.copper, 40, items.lead, 20));
             size = 1;
             health = 340;
