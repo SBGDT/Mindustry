@@ -4342,7 +4342,7 @@ public class Blocks{
                 Items.silicon, new LightningBulletType(){{
                     damage = 22f;
                     lightningLength = 6;
-                    lightningColor = Pal.lightning;
+                    lightningColor = Pal.redSpark;
                     collidesAir = true;
                     collidesGround = true;
                     ammoMultiplier = 3;
