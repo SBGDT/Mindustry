@@ -3985,6 +3985,16 @@ public class Blocks{
                     ammoMultiplier = 5f;
                     toColor = Pal.thoriumPink;
                     shootEffect = smokeEffect = Fx.thoriumShoot;
+                }},
+                Items.surgeAlloy, new RailBulletType(){{
+                    length = brange;
+                    damage = 500;
+                    ammoMultiplier = 2f;
+                    recoil = 3f;
+                    shootEffect = Fx.lightningCharge;
+                    hitEffect = Fx.impactReactorExplosion;
+                    reloadMultiplier = 1.7f;
+                    rangeChange = 10f;
                 }}
             );
             depositCooldown = 1.0f;
@@ -4267,6 +4277,11 @@ public class Blocks{
                     height = 23f;
                     shootEffect = Fx.spawnShockwave;
                     shootEffect = Fx.sparkShoot;
+                    shootEffect = Fx.sparkShoot;
+                    shootEffect = Fx.sparkShoot;
+                    hitEffect = Fx.sparkExplosion;
+                    hitEffect = Fx.sparkExplosion;
+                    hitEffect = Fx.sparkExplosion;
                     hitEffect = Fx.sparkExplosion;
                     pierceCap = 5;
                     pierceBuilding = true;
@@ -4424,6 +4439,9 @@ public class Blocks{
         meltdown = new LaserTurret("meltdown"){{
             requirements(Category.turret, with(Items.copper, 1200, Items.lead, 350, Items.graphite, 300, Items.surgeAlloy, 325, Items.silicon, 325));
             shootEffect = Fx.shootBigSmoke2;
+            shootEffect = Fx.sparkExplosion;
+            shootEffect = Fx.sparkExplosion;
+            shootEffect = Fx.sparkExplosion;
             shootCone = 40f;
             recoil = 4f;
             size = 4;
