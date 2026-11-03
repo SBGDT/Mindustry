@@ -4265,10 +4265,13 @@ public class Blocks{
                     hitSize = 5;
                     width = 18f;
                     height = 23f;
-                    shootEffect = Fx.shootBig;
+                    shootEffect = Fx.spawnShockwave;
+                    shootEffect = Fx.sparkShoot;
+                    hitEffect = Fx.sparkExplosion;
                     pierceCap = 5;
                     pierceBuilding = true;
                     knockback = 5f;
+                    damage = 1200;
 
                     backColor = hitColor = trailColor = Pal.thoriumAmmoBack;
                     frontColor = Pal.thoriumAmmoFront;
@@ -4288,21 +4291,10 @@ public class Blocks{
                     hitShake = 6f;
                     ammoMultiplier = 1f;
                 }},
-                Items.blastCompound, new ContinuousLaserBulletType(38f){{
-                    length = 190f;
-                    width = 9f;
-                    lifetime = 60f * 10f;
-                    pierceCap = 3;
-                    incendChance = 0.6f;
-                    incendSpread = 6f;
-
-                    hitEffect = Fx.hitFlameSmall;
-                    despawnEffect = Fx.spawnShockwave;
-                    shootEffect = Fx.shootPyraFlame;
-                    smokeEffect = Fx.artilleryTrailSmoke;
-                    shootEffect = Fx.lightningShoot;
+                Items.silicon, new BasicBulletType(12f, 80){{
 
                 }}
+                
             );
 
             maxAmmo = 40;
@@ -4343,13 +4335,14 @@ public class Blocks{
                 Items.copper, new LightningBulletType(){{
                     damage = 11f;
                     lightningLength = 4;
-                    lightningColor = Pal.lancerLaser;
+                    lightningColor = Pal.lightning;
                     collidesAir = true;
                     collidesGround = true;
                 }},
                 Items.silicon, new LightningBulletType(){{
                     damage = 22f;
                     lightningLength = 6;
+                    lightningColor = Pal.lightning;
                     collidesAir = true;
                     collidesGround = true;
                     ammoMultiplier = 3;
