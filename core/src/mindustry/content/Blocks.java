@@ -4335,7 +4335,7 @@ public class Blocks{
                 Items.copper, new LightningBulletType(){{
                     damage = 11f;
                     lightningLength = 4;
-                    lightningColor = Pal.lightning;
+                    lightningColor = Pal.redSpark;
                     collidesAir = true;
                     collidesGround = true;
                 }},
