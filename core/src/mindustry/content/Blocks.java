@@ -3992,7 +3992,6 @@ public class Blocks{
                     ammoMultiplier = 2f;
                     recoil = 3f;
                     shootEffect = Fx.lightningCharge;
-                    hitEffect = Fx.impactReactorExplosion;
                     reloadMultiplier = 1.7f;
                     rangeChange = 10f;
                 }}
