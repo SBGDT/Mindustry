@@ -3478,7 +3478,7 @@ public class Blocks{
                     despawnEffect = Fx.none;
                     status = StatusEffects.burning;
                     hittable = false;
-                }};
+                }},
                 Items.silicon, new BulletType(3.5f, 25f){{
                     ammoMultiplier = 5f;
                     hitSize = 7f;
