@@ -3486,7 +3486,6 @@ public class Blocks{
                     pierce = true;
                     collidesAir = true;
                     statusDuration = 60f * 6;
-                    shootEffect = Fx.shootThoraxFlame;
                     hitEffect = Fx.hitBulletSmall;
                     despawnEffect = Fx.none;
                 }}            );
