@@ -3478,8 +3478,18 @@ public class Blocks{
                     despawnEffect = Fx.none;
                     status = StatusEffects.burning;
                     hittable = false;
-                }}
-            );
+                }};
+                Items.silicon, new BulletType(3.5f, 25f){{
+                    ammoMultiplier = 5f;
+                    hitSize = 7f;
+                    lifetime = 18f;
+                    pierce = true;
+                    collidesAir = true;
+                    statusDuration = 60f * 6;
+                    shootEffect = Fx.shootThoraxFlame;
+                    hitEffect = Fx.hitBulletSmall;
+                    despawnEffect = Fx.none;
+                }}            );
             recoil = 0f;
             reload = 6f;
             coolantMultiplier = 1.5f;
